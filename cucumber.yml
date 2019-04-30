@@ -1,0 +1,7 @@
+---
+default: --format pretty -p html
+html: --format html --out=reports/resultTest.html
+json: --format json --out=reports/resultTest.json
+
+ci: -p json --format progress -p headless
+headless: BROWSER=headless
