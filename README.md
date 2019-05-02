@@ -20,7 +20,7 @@ Jenkinsfile)
 - Possui configuração para subir 2 imagens docker, sendo uma do ruby e uma do selenium.
 - Possui configuração para rodar local
 
-## Configurando o ambiente para rodar o teste em ambiente LOCAL:
+## Configurando para rodar o teste em ambiente LOCAL:
 Antes de rodar os testes, por favor instale:
 
 1 - [ruby] - Instalando ruby
@@ -44,7 +44,7 @@ Antes de rodar os testes, por favor instale:
 - Para rodar os testes execute o seguinte comando na pasta do projeto:
 	cucumber
 
-## Configurando para rodar os testes no JENKINS:
+## Configurando para rodar o teste no JENKINS:
 [Rodando os testes no Jenkins]
 
 - Instalando Docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
