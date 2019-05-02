@@ -64,6 +64,7 @@ Antes de rodar os testes, por favor instale:
 
 - No navegador, acessar o Jenkins em: localhost:8080
   Para desbloquear o Jenkins no primeiro acesso:
+  
      	- No terminal digitar: docker exec -it NomeContainerJenkins bash (para ver o nome do container digite "docker ps -a")
      	- ls -l
     	- cat EndereçoExibidoAoAcessarLocalHost
@@ -74,14 +75,14 @@ Antes de rodar os testes, por favor instale:
      	- Salvar e finalizar
       
 - No Jenkins criar um novo JOB do tipo pipeline
-  	- Clicar em Novo Job
-  	- Digitar um nome e selecionar a opção Pipeline
-  	- No campo Pipeline selecione a opção "Pipeline script from SCM"
-  	- No campo "SCM" selecionar Git
-  	- Colar a URL do seu projeto no Git
-  	- Apertar TAB para autenticar  
-  	- Script Path: Jenkinsfile
-  	- Clicar em salvar
+	- Clicar em Novo Job
+	- Digitar um nome e selecionar a opção Pipeline
+	- No campo Pipeline selecione a opção "Pipeline script from SCM"
+	- No campo "SCM" selecionar Git
+	- Colar a URL do seu projeto no Git
+	- Apertar TAB para autenticar  
+	- Script Path: Jenkinsfile
+	- Clicar em salvar
   
  - Inserindo plugin de relatório no Jenkins (Projeto está configurado no Jenkinsfile para gerar relatório)
  	- Clicar em Gerenciar Jenkins/ Gerenciar plugins
