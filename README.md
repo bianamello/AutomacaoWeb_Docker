@@ -12,15 +12,15 @@ Jenkinsfile)
 - [x] Verifica o valor total da compra
 - [x] Emite uma ordem de compra e verifica se a ordem foi emitida com sucesso.
 
-### Estrutura do projeto:
+## Estrutura do projeto:
 - Desenvolvido no padrão page object
 - Possui relatório em formato html, com evidência dos testes em anexo (imagens) - Pasta reports
 - Configurado para rodar no navegador Chrome
-- Possui configuração para subir 2 imagens docker, sendo uma do ruby e uma do selenium.
 - Este projeto está preparado para rodar no pipeline do jenkins (Possui Jenkinsfile).
+- Possui configuração para subir 2 imagens docker, sendo uma do ruby e uma do selenium.
+- Possui configuração para rodar local
 
-
-### Configurando o ambiente:
+## Configurando o ambiente para rodar o teste em ambiente LOCAL:
 Antes de rodar os testes, por favor instale:
 
 1 - [ruby] - Instalando ruby
@@ -38,15 +38,14 @@ Antes de rodar os testes, por favor instale:
 	Windows:
    		C:/Windows
 
-**Executando os testes:**
-
 3 - [Rodando os testes na maquina local]
 - No terminal, na pasta do projeto, execute o seguinte comando que irá instalar as Gems do projeto:
 	bundler install
 - Para rodar os testes execute o seguinte comando na pasta do projeto:
 	cucumber
-  
-4 - [Rodando os testes no Jenkins]
+
+## Configurando para rodar os testes no JENKINS:
+[Rodando os testes no Jenkins]
 
 - Instalando Docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
