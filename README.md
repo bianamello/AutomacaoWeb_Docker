@@ -64,33 +64,33 @@ Antes de rodar os testes, por favor instale:
 
 - No navegador, acessar o Jenkins em: localhost:8080
   Para desbloquear o Jenkins no primeiro acesso:
-     - No terminal digitar: docker exec -it NomeContainerJenkins bash (para ver o nome do container digite "docker ps -a")
-     - ls -l
-     - cat EndereçoExibidoAoAcessarLocalHost
-     - Copiar a senha exibida no terminal
-     - Colar a senha no navegador, no campo Administrador Password
-     - Selecionar "plugins sugeridos"
-     - criar usuário (preencher todos os campos com devops - sugestão)
-     - Salvar e finalizar
+     	- No terminal digitar: docker exec -it NomeContainerJenkins bash (para ver o nome do container digite "docker ps -a")
+     	- ls -l
+    	- cat EndereçoExibidoAoAcessarLocalHost
+     	- Copiar a senha exibida no terminal
+     	- Colar a senha no navegador, no campo Administrador Password
+     	- Selecionar "plugins sugeridos"
+     	- criar usuário (preencher todos os campos com devops - sugestão)
+     	- Salvar e finalizar
       
 - No Jenkins criar um novo JOB do tipo pipeline
-  Clicar em Novo Job
-  Digitar um nome e selecionar a opção Pipeline
-  No campo Pipeline selecione a opção "Pipeline script from SCM"
-  No campo "SCM" selecionar Git
-  Colar a URL do seu projeto no Git
-  Apertar TAB para autenticar  
-  Script Path: Jenkinsfile
-  Clicar em salvar
+  	- Clicar em Novo Job
+  	- Digitar um nome e selecionar a opção Pipeline
+  	- No campo Pipeline selecione a opção "Pipeline script from SCM"
+  	- No campo "SCM" selecionar Git
+  	- Colar a URL do seu projeto no Git
+  	- Apertar TAB para autenticar  
+  	- Script Path: Jenkinsfile
+  	- Clicar em salvar
   
  - Inserindo plugin de relatório no Jenkins (Projeto está configurado no Jenkinsfile para gerar relatório)
-  Clicar em Gerenciar Jenkins/ Gerenciar plugins
-  Clicar em Disponíveis e filtrar por "cucumber reports"
-  Selecionar e Baixar
-  Após baixar, selecionar a opção para reiniciar o Jenkins
+ 	- Clicar em Gerenciar Jenkins/ Gerenciar plugins
+  	- Clicar em Disponíveis e filtrar por "cucumber reports"
+  	- Selecionar e Baixar
+  	- Após baixar, selecionar a opção para reiniciar o Jenkins
 
 - Para rodar os testes no pipeline do Jenkins:
-	Clicar no JOB criado e clicar em "Construir agora"
+	- Clicar no JOB criado e clicar em "Construir agora"
   
  Seu teste será executado no pipeline do Jenkins.
 
